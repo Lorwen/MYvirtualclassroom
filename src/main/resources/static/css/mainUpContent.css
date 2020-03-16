@@ -1,0 +1,90 @@
+/* title part */
+main {
+    background: rgba(255, 255, 255, 1);
+    margin: 20px 0;
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.pageTitle {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.underline {
+    background: rgba(255, 214, 0, 1);
+    height: 5px;
+    margin: 0 10px;
+}
+
+.teacherContent {
+    width: 100%;
+    display: flex;
+    padding: 40px;
+}
+
+.classes {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.hiddenCreateClass {
+    display: none;
+}
+
+.openCreateClass .hiddenCreateClass {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: -100px;
+    align-items: center;
+}
+
+.createClassBtn {
+    background: rgba(255, 214, 0, 1);
+    width: 70px;
+    border: none;
+}
+
+.createClassInput {
+    width: 200px;
+}
+
+.newClass {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 7px 5px black;
+}
+
+@media screen and (max-width: 360px) {
+    .openCreateClass .hiddenCreateClass {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-left: -155px;
+        align-items: center;
+    }
+
+    .newClass {
+        display: flex;
+        box-shadow: none;
+        flex-direction: column;
+    }
+
+    .createClassBtn {
+        align-self: center;
+    }
+}
+
